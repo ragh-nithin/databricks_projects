@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "test notebook run",
+				"name": "test_notebook_run_v1",
 				"type": "DatabricksNotebook",
 				"dependsOn": [],
 				"policy": {
@@ -18,7 +18,7 @@
 					"notebookPath": "/Users/ragh.nithin@gmail.com/databricks_projects/python codes/test notebook"
 				},
 				"linkedServiceName": {
-					"referenceName": "ls_adb_projects",
+					"referenceName": "adf_azure_ls",
 					"type": "LinkedServiceReference"
 				}
 			}

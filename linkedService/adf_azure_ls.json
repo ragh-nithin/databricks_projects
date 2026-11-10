@@ -1,6 +1,5 @@
 {
-	"name": "ls_adb_projects",
-	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"name": "adf_azure_ls",
 	"properties": {
 		"annotations": [],
 		"type": "AzureDatabricks",
@@ -13,7 +12,8 @@
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "akv-adb-access-token"
-			}
+			},
+			"existingClusterId": "1110-072034-0gkqinbv"
 		}
 	}
 }
