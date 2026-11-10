@@ -1,0 +1,30 @@
+{
+	"name": "all_files_under_blob_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blobstoragedbproject",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "blobl storage"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"container": "dbprojects-blobsa"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

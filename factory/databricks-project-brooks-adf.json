@@ -1,0 +1,15 @@
+{
+	"name": "databricks-project-brooks-adf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "indiasouthcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ec7fa183-26d5-49d1-84e5-d0b279d2b590",
+		"tenantId": "99ed1e6f-4d48-4ebd-8ac0-74fbadd3c2c8"
+	}
+}

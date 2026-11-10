@@ -1,0 +1,37 @@
+{
+	"name": "csv_files_under_adls_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adlsdbproject",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"fileName": {
+				"type": "string"
+			},
+			"folderPath": {
+				"type": "string"
+			}
+		},
+		"folder": {
+			"name": "adls storage"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().folderPath",
+					"type": "Expression"
+				},
+				"fileSystem": "dbprojects-adlssa"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
