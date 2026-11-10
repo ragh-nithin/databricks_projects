@@ -1,0 +1,28 @@
+{
+	"name": "adb_project",
+	"properties": {
+		"activities": [
+			{
+				"name": "test notebook run",
+				"type": "DatabricksNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/ragh.nithin@gmail.com/databricks_projects/python codes/test notebook"
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_adb_projects",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
